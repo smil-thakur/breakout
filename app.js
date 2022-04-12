@@ -149,9 +149,10 @@ function checkForCollisions() {
 
 
 
-    if (ballCurrentPosition[0] >= (560 - ballDiameter) || ballCurrentPosition[1] >= (300 - ballDiameter)) {
+    if (ballCurrentPosition[0] >= (560 - ballDiameter) || ballCurrentPosition[0] <= 0 || ballCurrentPosition[1] >= (300 - ballDiameter)) {
         changeDirection()
     }
+
 
     //check for gaveover
     if (ballCurrentPosition[1] <= 0) {
